@@ -24,9 +24,9 @@ app.use( express.json() );
 //TODO: auth // crear, login, renew
 app.use('/api/auth', require('./routes/auth'));
 
-/* app.get( '*', ( req, res ) => {
+app.get( '*', ( req, res ) => {
     res.sendFile( __dirname + '/public/index.html' )
-} ); */
+} );
 
 //TODO: CRUD: eventos
 app.use('/api/events', require('./routes/events'));
